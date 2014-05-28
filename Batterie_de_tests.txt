@@ -1,0 +1,41 @@
+Le programme termine correctement quand il est appelé avec des arguments valides.
+
+
+Décryption :
+
+Valides :
+
+vOUS poUVEZ vENIr -taille=5 -d OK
+vOUS poUVEZ vENIr -d taille=5 OK
+
+Invalides : (OK si l'essai ne passe pas, comme prévu)
+
+vOUS poUVEZ vENIr -d OK
+vOUS poUVEZ vENIrr -taille=5 -d OK
+vOUS poUVEZ vENIR -taille=5 -d OK
+vOUS poUVEZ vENIR -taille=5 -d -e OK
+123 -d OK
+vOUS poUVEZ vENIr -taille=8 -d OK
+
+
+
+Encryption :
+
+Valides :
+
+non –taille=5 –e OK
+non –e –taille=5  OK
+
+Bon élève -e -taille=8 NON, pas la même sortie que dans l'énoncé du tp
+
+En fait c'est bizarre : quand je décrypte la sortie du prof, les accents ne s'affichent pas. Quand je fais la combinaison encrypter / décrypter
+notre programme les affiche. Il va falloir voir ça avec lui je crois. Notre sortie est plus longue, est-ce que c'est ça que tu voulais dire
+pendant le cours par rapport aux caractères accentués stockés sur 2 octets? Si oui, je crois que tu as raison et qu'on devrait lui écrire, laisse-moi
+savoir.
+
+
+Invalides : (OK si l'essai ne passe pas, comme prévu)
+Les mêmes combinaisons d'arguments invalides que pour la décryption OK
+
+
+tO be or Not TO bE THAt IS tHE Question to BE Or Not To BE tHAt iS THe QuestION tO Be oR Not To Be that is t
